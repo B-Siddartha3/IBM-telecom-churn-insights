@@ -28,7 +28,7 @@ It helps identify **high-risk services** like Fiber Optic and Electronic Check c
 This dashboard gives a **complete overview of customers**, including churn rate, total customers lost, and revenue impact.  
 It also explores **demographics and payment methods** to better understand churn behavior.  
 
-![Customer Churn Overview](images/customer_churn_overview.png)
+![Customer Churn Overview](images/churn_overview.png)
 
 ---
 
