@@ -1,7 +1,40 @@
 # 📊 Telecom Customer Churn Analysis – Power BI Project
+## Project Overview
 
-This project provides an end-to-end analysis of **customer churn in a telecom company** using the IBM Telco dataset.  
+This project provides an end-to-end analysis of **customer churn in a telecom company** using the kaggle Telcom dataset.  
 The goal is to understand customer behavior, identify churn patterns, and provide business insights to improve retention.
+
+## Data source
+The dataset is publicly available at https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+The data set includes information about:
+
+Customers who left within the last month – the column is called Churn
+Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device 
+protection, tech support, and streaming TV and movies
+Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly
+charges, and total charges
+Demographic info about customers – gender, age range, and if they have partners and dependents
+## Data Preparation
+**1. Unpivot Services**
+The dataset originally had multiple service columns ( with values 
+like Yes/No.)These columns were unpivoted to create two columns:  
+Service Name — the name of the service  
+Value — the subscription status (Yes or No)  
+
+**2. Create Single Service Column**
+The Value column (Yes/No) was removed.
+A single column was created showing only the services that each customer actually subscribed to.  
+This column now contains the list of services per customer, simplifying analysis and visualization of  
+customer subscriptions.
+
+**3. Tenure Grouping**
+The tenure column (number of months a customer stayed) was grouped into categories:  
+0-12 months → New Customers  
+13-24 months → 1-2 Years  
+25-48 months → 2-4 Years  
+49-72 months → 4-6 Years  
+73+ months → Long-term Customers  
+These groups allow churn patterns to be studied across different customer tenures.  
 
 
 
