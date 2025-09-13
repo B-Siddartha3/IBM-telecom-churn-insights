@@ -3,7 +3,7 @@
 This project provides an end-to-end analysis of **customer churn in a telecom company** using the IBM Telco dataset.  
 The goal is to understand customer behavior, identify churn patterns, and provide business insights to improve retention.
 
----
+
 
 ## 🚀 Project Highlights
 - **Churn rate analysis** at service, demographic, and contract levels.
@@ -16,19 +16,25 @@ The goal is to understand customer behavior, identify churn patterns, and provid
 
 ## 📸 Dashboard Previews
 
-### 1️⃣ Factors Affecting Churn Rate
-This dashboard highlights how churn varies across different services, billing types, partners, and contract categories.  
-It helps identify **high-risk services** like Fiber Optic and Electronic Check customers.  
+
+### 1️⃣ Customer Churn Overview
+This dashboard gives a **complete overview of customers**, including churn rate, total customers lost, Number 
+of customers based on paper less billing, dependents,having partners, gender,
+payment method.This Dashboard gives clear distribution of customers, who are churned,
+not churned and can help us see both combined.
+It  explores **demographics and payment methods** to better understand churn behavior.  
+
+![Customer Churn Overview](images/churn_overview.png)
+
+
+### 2️⃣  Factors Affecting Churn Rate
+This dashboard highlights how churn varies across different services, billing types, partners,average
+monthly charges,average total charges,average monthly charges of different contract type and contract categories.  
+It helps identify **high-risk services** in serives, payment methods,contract types,monthly charges.  
 
 ![Factors Affecting Churn Rate](images/factors_churn.png)
 
 ---
-
-### 2️⃣ Customer Churn Overview
-This dashboard gives a **complete overview of customers**, including churn rate, total customers lost, and revenue impact.  
-It also explores **demographics and payment methods** to better understand churn behavior.  
-
-![Customer Churn Overview](images/churn_overview.png)
 
 ---
 
@@ -47,7 +53,7 @@ It also explores **demographics and payment methods** to better understand churn
 - **Electronic check payment method** customers are more likely to churn.  
 - Month-to-month contracts show significantly higher churn compared to yearly contracts.  
 - Paperless billing has a noticeable impact on churn rate.  
-- Senior citizens and customers with multiple services are more prone to churn.  
+    
 
 ---
 
