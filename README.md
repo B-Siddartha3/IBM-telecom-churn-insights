@@ -4,7 +4,7 @@
 The goal is to understand customer behavior, identify churn patterns, and provide business insights to improve retention.
 
 ## Data source
-The dataset is publicly available at https://www.kaggle.com/datasets/blastchar/telco-customer-churn  
+`The dataset is publicly available at `https://www.kaggle.com/datasets/blastchar/telco-customer-churn  
 The data set includes information about:
 
 Customers who left within the last month – the column is called Churn.    
@@ -17,8 +17,8 @@ Demographic info about customers – gender, age range, and if they have partner
 **1. Unpivot Services**  
 The dataset originally had multiple service columns ( with values like Yes/No.)  
 These columns were unpivoted to create two columns:  
-**Service Name** — the name of the service  
-**Value** — the subscription status (Yes or No)  
+`Service Name — the name of the service`  
+`Value — the subscription status (Yes or No)`
 
 **2. Create Single Service Column**  
 The Value column (Yes/No) was removed.
@@ -28,11 +28,11 @@ customer subscriptions.
 
 **3. Tenure Grouping**  
 The tenure column (number of months a customer stayed) was grouped into categories:  
-0-12 months → New Customers  
-13-24 months → 1-2 Years  
-25-48 months → 2-4 Years  
-49-72 months → 4-6 Years  
-73+ months → Long-term Customers    
+`0-12 months → New Customers  `
+`13-24 months → 1-2 Years  `
+`25-48 months → 2-4 Years  `
+`49-72 months → 4-6 Years  `
+`73+ months → Long-term Customers  `  
 These groups allow churn patterns to be studied across different customer tenures.  
 ## DAX Measures  
 ```bash
