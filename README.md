@@ -35,11 +35,19 @@ The tenure column (number of months a customer stayed) was grouped into categori
 73+ months → Long-term Customers    
 These groups allow churn patterns to be studied across different customer tenures.  
 ## DAX Measures  
-**Churn rate**=DIVIDE(CALCULATE( DISTINCTCOUNT('churntable'[CustomerID]),KEEPFILTERS('churntable'[Churn] =TRUE())),CALCULATE(DISTINCTCOUNT('churntable'[CustomerID]),  
-REMOVEFILTERS('churntable'[Churn])))*100  
-**Total customers** = DISTINCTCOUNT(churntable[customerID])        
-**Count of Churned customers** = CALCULATE(DISTINCTCOUNT('churntable'[CustomerID]),KEEPFILTERS('churntable'[Churn] = TRUE()))
-**TOTAL revenue lost** = CALCULATE(sum(churntable[TotalCharges]),KEEPFILTERS('churntable'[Churn]=TRUE()))
+```bash
+Churn rate=DIVIDE(CALCULATE( DISTINCTCOUNT('churntable'[CustomerID]),KEEPFILTERS('churntable'[Churn] =TRUE())),CALCULATE(DISTINCTCOUNT('churntable'[CustomerID]),  
+REMOVEFILTERS('churntable'[Churn])))*100
+```
+```bash
+Total customers = DISTINCTCOUNT(churntable[customerID])
+```
+```bash
+Count of Churned customers = CALCULATE(DISTINCTCOUNT('churntable'[CustomerID]),KEEPFILTERS('churntable'[Churn] = TRUE()))
+```
+```bash
+TOTAL revenue lost = CALCULATE(sum(churntable[TotalCharges]),KEEPFILTERS('churntable'[Churn]=TRUE()))
+```
 
 ## Data Visualisation using POWER BI
 ## 📸 Dashboard Previews
